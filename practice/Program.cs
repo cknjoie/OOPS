@@ -11,7 +11,9 @@ public class Program
         int num2 = Convert.ToInt32(Console.ReadLine());
 
         int sum = num1 + num2;
+        int difference = num1 - num2;
 
         Console.WriteLine("Sum = " + sum);
+        Console.WriteLine("Difference = " + difference);
     }
 }
