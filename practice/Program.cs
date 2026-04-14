@@ -17,3 +17,9 @@ public class Program
         Console.WriteLine("Difference = " + difference);
     }
 }
+
+//--------------------------------------------------------
+
+You need to paste your program for Subtraction
+
+//----------------------------------------------------
