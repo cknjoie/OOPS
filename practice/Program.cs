@@ -1,25 +1,23 @@
 using System;
 
-public class Program
+//separate class for operators
+class Calculator
 {
-    public static void Main()
+    public int Add(int a, int b)
     {
-        Console.Write("First number: ");
-        int num1 = Convert.ToInt32(Console.ReadLine());
+        return a + b;
+    }
 
-        Console.Write("Second number: ");
-        int num2 = Convert.ToInt32(Console.ReadLine());
+    public int Subtract(int a, int b)
+    {
+        return a - b;
+    }
 
-        int sum = num1 + num2;
-        int difference = num1 - num2;
-
-        Console.WriteLine("Sum = " + sum);
-        Console.WriteLine("Difference = " + difference);
+    public int Multiply(int a, int b)
+    {
+        return a * b;
     }
 }
-
-
-using System;
 
 public class Program
 {
@@ -31,8 +29,10 @@ public class Program
         Console.Write("Enter second number: ");
         int num2 = Convert.ToInt32(Console.ReadLine());
 
-        int sum = num1 + num2;
+        Calculator calc = new Calculator();
 
-        Console.WriteLine("Sum = " + sum);
+        Console.WriteLine("Sum = " + calc.Add(num1, num2));
+        Console.WriteLine("Difference = " + calc.Subtract(num1, num2));
+        Console.WriteLine("Product = " + calc.Multiply(num1, num2));
     }
 }
